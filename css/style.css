@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+body {
+  font-size: 16px;
+  font-family: "Red Hat Display", sans-serif;
+  margin: 0;
+  background: hsl(225, 100%, 94%);
+  height: 100vh;
+}
+body .desktop {
+  width: 100%;
+}
+body .desktop svg {
+  display: none;
+}
+body .mobile svg {
+  display: none;
+}
+body .attribution {
+  position: fixed;
+  bottom: 0;
+  padding-bottom: 18px;
+  width: 100%;
+}
+
+@media screen and (max-width: 1440px) {
+  body .desktop svg {
+    display: initial;
+    position: absolute;
+    z-index: -1;
+    width: 100vw;
+  }
+}
+@media screen and (max-width: 375px) {
+  body .desktop svg {
+    display: none;
+    position: absolute;
+    z-index: -1;
+    width: 100vw;
+  }
+  body .mobile svg {
+    display: initial;
+    position: absolute;
+    z-index: -1;
+    width: 100vw;
+  }
+}
+.layout {
+  width: calc(100% - 48px);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 24px;
+}
+.layout .content {
+  background: hsl(225, 100%, 98%);
+  border-radius: 24px;
+}
+.layout .content .img {
+  width: 100%;
+  max-width: 450px;
+  height: 220px;
+  background: url("../images/illustration-hero.svg") center/cover no-repeat;
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+  margin-bottom: 32px;
+}
+.layout .content h3 {
+  text-align: center;
+  font-weight: 800;
+  max-width: 450px;
+}
+.layout .content p {
+  text-align: center;
+  padding: 0 56px;
+  max-width: 338px;
+  color: hsl(224, 23%, 55%);
+}
+.layout .content .proceed {
+  background: hsl(225, 73%, 96%);
+  margin: 0 48px;
+  padding: 12px 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 12px;
+  margin-bottom: 32px;
+}
+.layout .content .proceed .plan {
+  display: flex;
+  flex-direction: column;
+}
+.layout .content .proceed .plan span:nth-child(1) {
+  font-weight: 800;
+  color: hsl(223, 47%, 23%);
+}
+.layout .content .proceed .plan span:nth-child(2) {
+  color: hsl(224, 23%, 55%);
+}
+.layout .content .proceed .link a {
+  color: hsl(245, 75%, 52%);
+  font-weight: 600;
+}
+.layout .content .proceed .link a:hover {
+  text-decoration: none;
+  opacity: 0.8;
+}
+.layout .content .button {
+  text-align: center;
+  padding: 0 48px;
+}
+.layout .content .button button {
+  border: none;
+  background: hsl(245, 75%, 52%);
+  width: 100%;
+  padding: 18px 0;
+  border-radius: 12px;
+  font-size: 1.1em;
+  color: hsl(225, 100%, 98%);
+  font-weight: 600;
+  transition: 0.2s ease-in-out;
+  margin-bottom: 32px;
+}
+.layout .content .button button:hover {
+  opacity: 0.8;
+  cursor: pointer;
+  box-shadow: 2px 2px 10px 0px hsl(245, 75%, 52%);
+}
+.layout .content .cancel {
+  display: block;
+  text-align: center;
+  margin-bottom: 48px;
+}
+.layout .content .cancel a {
+  text-decoration: none;
+  color: hsl(224, 23%, 55%);
+  font-weight: 600;
+}
+.layout .content .cancel a:hover {
+  color: hsl(223, 47%, 23%);
+  font-weight: 800;
+}/*# sourceMappingURL=style.css.map */
